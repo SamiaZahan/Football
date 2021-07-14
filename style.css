@@ -14,6 +14,10 @@ header{
     background-color: #2D25A0;
     padding: 40px 140px;
 }
+header:hover {
+    background-color:  #494575; 
+    transition: .5s;
+}
 /* navigation-bar style */
 nav{
     height: 44px;
@@ -60,9 +64,15 @@ nav{
     padding: 10px 24px;
     font-size: 16px;
 }
+
 .heading-text a i{
     color: white;
     margin-left: 8px;
+}
+.heading-banner img:hover {
+    transform: scale(1.2);
+    transition-timing-function: ease-in-out;
+    transition: .5s;
 }
 .heading-banner img{
     width: 550px;
@@ -300,8 +310,7 @@ official sponsor style
        display: none;
     }
     .header-body{
-        padding: 0;
-        
+        padding: 0;     
     }
     .heading-text h1{
         font-size: 36px;    
