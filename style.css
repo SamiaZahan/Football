@@ -1,0 +1,365 @@
+/* common style */
+body{
+    width: 100%;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*--------------
+ header style 
+ --------------*/
+
+header{   
+    height: 597px;
+    background-color: #2D25A0;
+    padding: 40px 140px;
+}
+/* navigation-bar style */
+nav{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding: 0;   
+}
+.menu ul li{
+    color: white;
+    margin-right: 36px;
+    font-size: 16px;
+}
+/* button */
+.login{
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: white;
+    padding: 0 24px;
+    border: none;
+     
+} 
+.login i{
+    margin-right: 8px;
+} 
+
+/* header-body style */
+.header-body{
+    display: flex;
+    padding-top:50px;
+    justify-content: space-between;
+}
+.heading-text h1{
+    font-size: 64px;
+    color: white;
+}
+.watch-live{
+    text-decoration: none;
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+.heading-text a i{
+    color: white;
+    margin-left: 8px;
+}
+.heading-banner img{
+    width: 550px;
+    height: 438px;
+}
+
+/*--------------
+ top-players style
+ -------------- */
+.top-players{
+    padding:70px 200px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 30px;
+    justify-content: center;   
+}
+ .player{
+     padding: 15px;
+     width: 300px;
+     height: 444px;
+     box-shadow: 0 0 4px 4px #cfcfcf ;
+ }
+ .player img{
+     width: 100%;
+     height: 256;
+ }
+ .player h2{
+     font-size: 28px;
+ }
+ .player p{
+     font-size: 16px;
+     color:#6C6C6C;
+     margin-bottom: 15px;    
+ }
+
+/*-----------------
+ highlight style
+ ---------------- */
+.highlights{
+    padding:70px 140px; 
+    display:flex;
+    justify-content: space-between;  
+}
+
+.highlight-heading{
+    align-content: center;
+}
+.highlight-heading h1{
+    font-weight: 700px;
+    font-size: 48px;
+}
+.highlight-heading p{
+    font-size: 16px;
+    color:#6C6C6C;
+    margin-bottom: 25px; 
+}
+.highlight-banner img{
+    width: 567px;
+    height: 427PX;
+}
+
+/* -------------
+latest news style
+--------------- */
+.latest h1{
+    font-size: 56px;
+    text-align: center;
+    margin:0;
+}
+.latest-news{
+    padding:70px 200px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-gap: 30px;
+    justify-content: center;
+} 
+.news{
+    padding: 15px;
+    width: 300px;
+    height: 444px;
+    box-shadow: 0 0 4px 4px #cfcfcf ;
+}
+.news img{
+    width: 100%;
+     height: 256px;
+}
+.news h2{
+    font-size: 18px;
+    color:tomato;
+}
+.news-covered{
+    display: flex;
+    justify-content: space-between;
+}
+.news-covered p{
+    font-size: 16px;
+    color:#6C6C6C ;
+}
+.news-covered img{
+    width: 50px;
+    height:30px;
+    padding-top: 15px; 
+}
+
+/* --------------------
+official sponsor style 
+----------------------*/
+.sponsor{
+    
+    padding: 0 200px 70px 200px;
+}
+.sponsor h1{
+    font-size: 32px;
+    text-align: center;    
+}
+.sponsor-companies{
+    width: fit-content;
+    margin: auto;
+}
+.sponsor-companies img{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+/*--------------
+ footer style
+ ------------- */
+ .footer-heading img{
+     width: 485px;
+     display:block;
+     margin:auto;
+     
+ }
+ .social-icon{
+     width:fit-content;
+     margin: auto;
+ }
+ .social-icon img{
+     width: 32px;
+     height: 32px;
+     
+ }
+ .copyright{
+     text-align: center;
+     font-size: 18px;
+ }
+
+ /*-----------------
+ Media Query
+ --------------- */
+
+ /* Mobile Devices */
+ @media only screen and (max-width: 688px) {
+    header{
+        padding: 0;;  
+        height: 695px;     
+    }
+    nav{
+       display: none;
+    }
+    .header-body{
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .heading-text h1{
+        font-size: 36px;    
+    }
+
+    .heading-banner img{
+        margin-top: 70px;
+        width: 330px;
+        height: 260px;
+    }
+    .top-players{  
+        align-items: center;
+        grid-template-columns: repeat(1 ,1fr);    
+    } 
+    .highlights{
+        padding:0;
+        flex-direction: column;
+        align-items:  center;
+    } 
+    .highlight-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-heading h1{
+        font-size: 30px;
+        text-align: center;
+    } 
+   .highlight-banner{
+       display: block;
+       justify-content: center;
+   }
+    .highlight-banner img{
+        width: 330px;
+        height: 250PX;
+        margin-top: 40px;
+    }
+    .latest h1{
+        font-size: 36px;
+    }
+    .latest-news{
+        padding: auto;
+        grid-template-columns: repeat(1 ,1fr);   
+    }
+    .sponsor{
+       padding: 0;
+    }
+    .sponsor-companies img{
+        width: 80px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    footer{
+        padding:0;
+    }
+    .footer-heading img{
+        width:275px;       
+    }
+    
+ }
+
+ /* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    
+    header{
+        padding: 15px;  
+        height: 300px;     
+    }
+    nav{
+       display: none;
+    }
+    .header-body{
+        padding: 0;
+        
+    }
+    .heading-text h1{
+        font-size: 36px;    
+    }
+
+    .heading-banner img{
+        margin-top: 30px;
+        width: 330px;
+        height: 260px;
+    }
+    .top-players{ 
+        grid-gap: 10px;
+        align-items: center;
+        grid-template-columns: repeat(2 ,1fr);    
+    } 
+    .highlights{
+          flex-direction: column;
+        align-items:  center;
+    } 
+    .highlight-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .highlight-heading h1{
+        font-size: 30px;
+        text-align: center;
+    } 
+   .highlight-banner{
+       display: block;
+       justify-content: center;
+   }
+    .highlight-banner img{
+        width: 330px;
+        height: 250PX;
+        margin-top: 40px;
+    }
+    .latest h1{
+        font-size: 36px;
+    }
+    .latest-news{
+        padding: auto;
+        grid-template-columns: repeat(1 ,1fr);   
+    }
+    .sponsor{
+       padding: 0;
+    }
+    .sponsor-companies img{
+        width: 80px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    footer{
+        padding:0;
+    }
+    .footer-heading img{
+        width:275px;       
+    }
+  
+    
+}
