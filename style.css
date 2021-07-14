@@ -228,8 +228,10 @@ official sponsor style
  /* Mobile Devices */
  @media only screen and (max-width: 688px) {
     header{
+        width: 100%;
         padding: 15px;  
-        height: 695px;    
+        height: 695px; 
+         
     }
     nav{
        display: none;
@@ -262,14 +264,10 @@ official sponsor style
         flex-direction: column;
         align-items: center;
     }
-    .highlight-heading h1{
+     .highlight-heading h1{
         font-size: 30px;
-        text-align: center;
-    } 
-   .highlight-banner{
-       display: block;
-       justify-content: center;
-   }
+        
+    }
     .highlight-banner img{
         width: 330px;
         height: 250PX;
@@ -283,6 +281,7 @@ official sponsor style
         grid-template-columns: repeat(1 ,1fr);   
     }
     .sponsor{
+        width: 100%;
        padding: 0;
     }
     .sponsor-companies img{
