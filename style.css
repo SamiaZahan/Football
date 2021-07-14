@@ -303,7 +303,7 @@ official sponsor style
 @media only screen and (min-width: 688px) and (max-width: 992px) {
     
     header{
-        padding: 15px;  
+        padding: 15px 100px 15px 100px;  
         height: 300px;     
     }
     nav{
@@ -352,8 +352,7 @@ official sponsor style
         font-size: 36px;
     }
     .latest-news{
-        padding: auto;
-        grid-template-columns: repeat(1 ,1fr);   
+        grid-template-columns: repeat(2 ,1fr);   
     }
     .sponsor{
        padding: 0;
